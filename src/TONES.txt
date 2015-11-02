@@ -1,0 +1,18 @@
+9502-   AD 30 C0    LDA   $C030    rw:SPKR
+9505-   88          DEY
+9506-   D0 05       BNE   $950D
+9508-   CE 01 95    DEC   $9501
+950B-   F0 09       BEQ   $9516
+950D-   CA          DEX
+950E-   D0 F5       BNE   $9505
+9510-   AE 00 95    LDX   $9500
+9513-   4C 02 95    JMP   $9502
+9516-   60          RTS
+9517-   00          BRK
+9518-   29 0F       AND   #$0F
+951A-   0A          ASL
+951B-   FF          ???
+951C-   FF          ???
+951D-   00          BRK
+951E-   00          BRK
+951F-   FF          ???
